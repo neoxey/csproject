@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CS Programs Copy</title>
+
+    <style>
+        body {
+            font-family: "Poppins", system-ui, sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px 0;
+            color: #fff;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(14px);
+            padding: 25px;
+            border-radius: 18px;
+            width: 420px;
+            margin: auto;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            background: linear-gradient(145deg, #00c6ff, #0072ff);
+            border: none;
+            border-radius: 14px;
+            padding: 14px;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.25s;
+            text-align: left;
+        }
+
+        button:hover {
+            transform: translateY(-2px) scale(1.02);
+        }
+
+        .result {
+            margin-top: 400px;
+            background: rgba(0, 0, 0, 0.35);
+            border-radius: 16px;
+            padding: 20px;
+            width: 420px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .result h3 {
+            margin-top: 0;
+            color: #7CFC00;
+        }
+
+        .output {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 15px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>CS Programs 📘</h2>
+
+        <!-- Hidden copy text -->
+        <textarea id="t1" hidden>
+        #include <iostream>
+            using namespace std;
+            int main()
+            {
+            float basic, gross, da,hra;
+            cout<<"Enter basic salary of an employee: ";
+        cin>>basic;
+        if (basic <25000)
+        {
+        da = basic *80/100;
+        hra= basic *20/100;
+        }
+        else if (basic >=25000 && basic<40000)
+        {
+        da = basic *90/100;
+        hra= basic *25/100;
+        }
+        else if (basic>=40000)
+        {
+        da = basic *95/100;
+        hra= basic *30/100;
+        }
+        gross= basic +hra+ da;
+        cout<< " \n\t Basic Pay ................"<< basic<<endl; cout<< "\t Dearness Allowance ......." << da <<endl;
+                cout<< "\t House Rent Allowance......" << hra <<endl; cout<< "\t ------------------------------------------"
+                <<endl; cout<< "\t Gross Salary.............." <<gross <<endl;
+                cout<< "\t ------------------------------------------"<<endl;
+        return 0;
+        }         </textarea>
+
+
+
+
+        <textarea id="t2" hidden>
+        #include <iostream>
+            using namespace std;
+            int main()
+            {
+            float percent;
+            int x;
+            cout<<"Enter your percentage: ";
+        cin>>percent;
+        cout<<" You scored "<<percent<<" %"<<endl; x=percent/10; switch (x) { case 10: case 9:
+        case 8:
+cout<<"You have passed with Distinction";
+break;
+case 7:
+case 6:
+cout<<"You have passed with First division";
+break;
+case 5:
+cout<<"You have passed with Second division";
+break;
+case 4:
+cout<<"You have passed with Third division";
+break;
+default:
+cout<<"Sorry: You have failed";
+}
+return 0;
+            }
+</textarea>
+
+
+
+        <textarea id="t3" hidden>#include <iostream>
+            using namespace std;
+            int main()
+            {
+            int n,num, digit, rev =0;
+            cout<<"Enter a positive number: ";
+            cin>>num;
+n =num;
+while (num)
+{
+digit=num%10;
+rev=(rev *10)+ digit;
+num=num/10;
+}
+cout<<" The reverse of the number is: "<< rev <<endl;
+if (n == rev)
+cout<<" The number is a palindrome";
+else
+cout<<" The number is not a palindrome";
+return 0;
+}
+    </textarea>
+
+
+
+        <textarea id="t4" hidden>
+        #include <iostream>
+            #include <cmath>
+                using namespace std;
+                int main()
+                {
+                    int dec,d,i,temp,ch;
+                    long int bin;
+                    do
+                    {
+                        dec=bin=d=i=0;
+                        cout<<"\n\n\t\tMENU\n1. Decimal to Binary number\n2.Binary to Decimal number\n3.Exit\n";
+                         cout <<"Enter your choice(1/2/3)"; cin>>ch;
+                            switch (ch)
+                            {
+                                case 1: cout << "Enter a decimal number: " ; cin>> dec;
+                                    temp=dec;
+                                
+                                    while (dec!=0)
+                                    {
+                                    d = dec%2;
+                                    bin += d * pow(10,i);
+                                    dec /= 2;
+                                    i++;
+                                }
+                                cout << temp << " in decimal = " << bin << " in binary" << endl ;break; 
+                                case 2: cout << "Enter a binary number: " ; 
+                                cin>> bin;
+                                    temp=bin;
+                                    while (bin!=0)
+                                    {
+                                    d = bin%10;
+                                    dec += d*pow(2,i);
+                                    bin /= 10;
+                                    i++;
+                                    }
+                                    cout << temp << " in binary = " <<dec << " in decimal" ;
+                                     break; 
+                                     case 3:
+                                      break; 
+                                     default : cout<<"Invalid choice"; 
+                                    }
+                                 }
+                                        while (ch!=3);
+                                     return 0; 
+                                    }
+
+                            </textarea>
+
+
+        <textarea id="t5" hidden>#include <iostream>
+        #include <stdlib.h>
+        using namespace std;
+        void Primechk (int a )
+        { int j;
+        if ( a == 0 || a == 1 )
+        { cout<< " NEITHER PRIME NOR COMPOSITE " ;} 
+        else { for (j=2 ; j<a; j++) { if (a%j==0) 
+            { cout<< "\tCOMPOSITE" ; break ; }
+            } 
+            if ( a==j ) cout<< "\tPRIME" ; } 
+        }
+         void fibo ( int n )
+          { int a=-1 , b=1 ,c=0 ; for ( int i=1 ; i <=n ; i++)
+             {
+            cout<<endl; c=a + b ; cout<<c; Primechk(c); a=b; b=c ; }
+         }
+          int main () 
+          { 
+            int n ; 
+            cout<< " ENTER THE NUMBER OF REQUIRED FIBO TERMS " ; cin>> n ;
+            cout<< "\n\tFIBONACCI SERIES\n " ; fibo (n) ; 
+            return 0;
+          }
+            </textarea>
+
+
+        <textarea id="t6" hidden>#include<iostream>
+            using namespace std;
+            int a[20],b[20],c[40];
+            int m,n,p,val,i,j,key,pos,temp;
+            /*Function Prototype*/
+            void display();
+            void insert();
+            void del();
+            int main()
+            {
+            int choice;
+            cout<<"\nEnter the size of the array elements:\t"; cin>>n;
+                cout<<"\nEnter the elements for the array:\n"; for (i=0;i<n;i++)
+                {
+cin>>a[i];
+}
+do {
+cout<<"\n\n--------Menu-----------\n";
+cout<<"1.Insert\n";
+cout<<"2.Delete\n";
+cout<<"3.Exit\n";
+cout<<"-----------------------";
+cout<<"\nEnter your choice:\t";
+cin>>choice;
+switch (choice)
+{
+case 1: insert();
+break;
+case 2: del();
+break;
+case 3:break;
+default :cout<<"\nInvalid choice:\n";
+}
+} while (choice!=3);
+return 0;
+}
+void display()//displaying an array elements
+{
+int i;
+cout<<"\nThe array elements are:\n";
+for(i=0;i<n;i++)
+{
+cout<<a[i]<<" ";
+}
+}//end of display()
+void insert()//inserting an element in to an array
+{
+cout<<"\nEnter the position for the new element:\t";
+cin>>pos;
+cout<<"\nEnter the element to be inserted :\t";
+cin>>val;
+for (i=n; i>=pos-1; i--)
+{
+a[i+1]=a[i];
+}
+a[pos-1]=val;
+n=n+1;
+display();
+}//end of insert()
+void del()//deleting an array element
+{
+cout<<"\n Enter the position of the element to be deleted:\t";
+cin>> pos;
+val= a [pos];
+for (i= pos;i<n-1;i++)
+{
+a[i]=a[i+1];
+}
+n=n-1;
+cout<<"\nThe deleted element is = "<<val;
+display();
+}
+</textarea>
+
+
+        <textarea id="t7" hidden>#include <iostream>
+using namespace std;
+void printBoundary (int a[][10], int m, int n)
+{
+for (int i = 0; i < m; i++) {
+for (int j = 0; j < n; j++)
+{
+if (i==0|| j==0||i==m-1||j==n-1)
+cout<<a[i][j]<<" ";
+else
+cout<<" ";
+}
+cout <<endl ;
+}
+}
+// Driver code
+int main()
+{
+int a[10][10] ,i,j,m,n;
+cout<<"Enter more than 3 number of rows and columns"<<endl;
+cin>>m>>n;
+for (i=0;i<m;i++)
+{
+for (j=0;j<n;j++)
+{
+cout<<"enter the value for array["<<i+1<<"]"<<"["<<j+1<<"] :";
+cin>>a[i][j];
+}
+}
+system("cls");
+cout<<"\n\nOriginal Array\n";
+for (i=0;i<m;i++)
+{
+for (j=0;j<n;j++)
+{
+cout<<a[i][j]<<" ";
+}
+cout<<endl;
+}
+cout<<"\n\n The Boundry element\n";
+printBoundary(a, m, n);
+return 0;
+}
+</textarea>
+
+
+        <textarea id="t8" hidden>#include<iostream>
+#include<stdlib.h>
+using namespace std;
+int id=1001;
+class Publisher
+{
+int Bookno;
+char Title[20];
+char Author [10];
+float Price;
+float Totamt;
+float calculate (int);
+public:
+Publisher()
+{Bookno=id;
+Title[0]='\0';
+Author[0]='\0';
+Price=0;
+Totamt=0;
+id++;
+}
+void Readdata();
+void Displaydata();
+};
+void Publisher::Readdata()
+{
+int nocopies;
+cout<<"Enter the Title name ";cin>>Title;
+cout<<"Enter the Author name ";cin>>Author;
+cout<<"Enter the Price ";cin>>Price;
+cout<<"Enter the Number of copies ";cin>>nocopies;
+Totamt=calculate(nocopies);
+}
+float Publisher::calculate(int x)
+{
+return x*Price;
+}
+void Publisher::Displaydata()
+{
+cout<<"\n\t\tABC PUBLISHERS\n";
+cout<<"\t\t~~~~~~~~~~~~~~\n";
+cout<<"\t\t INVOICE\n";
+cout<<"\t\t ~~~~~~~\n";
+cout<<"\n==================================\n";
+cout<<" Book Number : "<<Bookno<<endl;
+cout<<"Title : "<<Title<<endl;
+cout<<"Author Name : "<<Author<<endl;
+cout<<"Price Per Book : "<<Price<<endl;
+cout<<"Total Amount : "<<Totamt<<endl;
+cout<<"\n==================================\n";
+}
+int main()
+{
+int n,i;
+Publisher p[10];
+cout<<"Enter the number of object to be created";cin>>n;
+for (i=0;i<n;i++)
+p[i].Readdata();
+for (i=0;i<n;i++)
+p[i].Displaydata();
+return 0;
+}
+</textarea>
+
+
+        <textarea id="t9" hidden>#include<iostream>
+using namespace std;
+class emp{
+public:
+int eno;
+char name[20], des[20];
+void get(){cout<<"Enter the employee number:";
+cin>>eno;
+cout<<"Enter the employee name:";
+cin>>name;
+cout<<"Enter the designation:";
+cin>>des;
+}
+};
+class salary :public emp
+{
+float bp,hra, da,pf,np;
+public:
+void get1()
+{
+cout<<"Enter the basic pay:";
+cin>>bp;
+cout<<"Enter the HouseRent Allowance:";
+cin>>hra;
+cout<<"Enter the Dearness Allowance :";
+cin>>da;
+cout<<"Enter the Provident Fund:";
+cin>>pf;
+}
+void calculate()
+{
+np=bp+hra+ da -pf;
+}
+void display()
+{
+cout<<eno<<"\t"<<name<<"\t"<<des<<"\t"<<bp<<"\t"<<hra<<"\t"<<da<<"\t"<<pf<<"\
+t"<<np<<"\n";
+}
+};
+int main(){
+int i, n;
+char ch;
+salary s[10];
+cout<<"Enter the number of employee:";
+cin>>n;
+for (i =0; i < n; i++){
+    s[i].get();
+s[i].get1();
+s[i].calculate();
+}
+cout<<"\n\t\t\tEmployee Details\n";
+cout<<"\ne_no \t e_name\t des \t bp \t hra \t da \t pf \t np \n";
+for (i =0; i < n; i++){
+s[i].display();
+}
+return 0;
+}
+
+</textarea>
+
+
+        <textarea id="t10" hidden>#include<iostream>
+using namespace std;
+class Student
+{
+protected:
+int Rno;
+public:
+void Readno(int r)
+{
+Rno=r;
+}
+void Writeno()
+{
+cout<<"\nRoll no : "<<Rno;
+}
+};
+class Test :public Student
+{
+protected:
+float Mark1,Mark2;
+public:
+void Readmark (float m1,float m2) {
+Mark1=m1;
+Mark2=m2;
+}
+void Writemark() {
+cout<<"\n\n\tMarks Obtained\n ";
+cout<<"\n Mark1 : "<<Mark1;
+cout<<"\n Mark2 : "<<Mark2; }
+};
+class Sports {
+protected:
+int score;// score = Sports mark
+public:
+void Readscore (int s) {
+score=s; }
+void Writescore() {
+cout<<"\n Sports Score : "<<score; }
+};
+class Result :public Test,public Sports {
+int Total;
+public:
+void display() {
+Total = Mark1 + Mark2 + score;
+Writeno();
+Writemark();
+Writescore();
+cout<<"\n\n Total Marks Obtained : "<< Total<<endl;
+}
+};
+int main()
+{
+Result stud1;
+stud1.Readno(1201);
+stud1.Readmark(93.5,95);
+stud1.Readscore(80);
+cout<<"\n\t\t\t HYBRID INHERITANCE PROGRAM\n";
+stud1.display();
+return 0;
+}
+
+</textarea>
+
+        <!-- Buttons -->
+        <button onclick="copyAndShow(1)">1. CS1 – Gross Salary</button>
+        <button onclick="copyAndShow(2)">2. CS2 – Percentage</button>
+        <button onclick="copyAndShow(3)">3. CS3 – Palindrome</button>
+        <button onclick="copyAndShow(4)">4. CS4 – Number Conversion</button>
+        <button onclick="copyAndShow(5)">5. CS5 – Fibonacci Prime Series</button>
+        <button onclick="copyAndShow(6)">6. CS6 – Insert / Delete in Array</button>
+        <button onclick="copyAndShow(7)">7. CS7 – Boundary Matrix</button>
+        <button onclick="copyAndShow(8)">8. CS8 – ABC Publishers</button>
+        <button onclick="copyAndShow(9)">9. CS9 – Employee Details</button>
+        <button onclick="copyAndShow(10)">10. CS10 – Student Details</button>
+    </div>
+
+    <!-- Result section -->
+    <div id="result" class="result">
+        <h3>Copied Content 👇</h3>
+        <div id="output" class="output">Click a button above</div>
+    </div>
+
+    <script>
+        function copyAndShow(num) {
+            const text = document.getElementById("t" + num).value;
+
+            // Copy to clipboard
+            navigator.clipboard.writeText(text);
+
+            // Show text
+            document.getElementById("output").textContent = text;
+
+            // Smooth scroll
+            document.getElementById("result").scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+</body>
+
+</html>
